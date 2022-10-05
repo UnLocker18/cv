@@ -1,0 +1,60 @@
+:root {
+    --primary: #067B85;
+    --light: #6c757d;
+    --dark: #343a40;
+}
+
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.15rem;
+    font-weight: 500;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--light);
+}
+
+h6 {
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: normal;
+}
+
+a, a:hover {
+    color: var(--dark);
+}
+
+
+
+.small-img {
+    min-width: 50px;
+    width: 50px;
+}
+.img-color-primary {
+    filter: invert(28%) sepia(58%) saturate(1649%) hue-rotate(153deg) brightness(101%) contrast(95%);
+}
+.head-icon {
+    color: var(--primary);
+}
