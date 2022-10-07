@@ -1,6 +1,8 @@
 /** @jsx createElement */
 /** @jsxFrag createFragment */
 
+const Sb = (props) => (<span class="semi-bold" >{props.text}</span>);
+
 const bigIcons = {
   synarea:
     "https://media-exp1.licdn.com/dms/image/C4E0BAQFyqUegPGsI8g/company-logo_200_200/0/1519889453023?e=2147483647&v=beta&t=0EdGjRqiyd4dI8rwr_6T6wTsXROgs_9eypLV9VSHvHo",
@@ -20,15 +22,23 @@ const bigIcons = {
   otherSkills: "./img/person.svg",
   otherInfo: "./img/car-front.svg",
   exams: "./img/file-text.svg",
+  misc: "./img/terminal.svg",
 };
 
 const data_ita = {
   language: "ita",
   title: "Gianluca Garganese",
   head: {
-    birth: "07/11/1997 NAPOLI (NA) ITALIA",
-    nationality: "Nazionalità: Italiana",
+    line: "Laureando della magistrale in Ingegneria del Cinema e dei Mezzi di Comunicazione presso Politecnico di Torino.",
     items: [
+      {
+        text: "07/11/1997 NAPOLI (NA) ITALIA",
+        icon: "bi-calendar2-date-fill",
+      },
+      {
+        text: "Nazionalità: Italiana",
+        icon: "bi-globe2",
+      },
       {
         text: "Via Aldo Brina 19 13878 - CANDELO (BI) ITALIA",
         icon: "bi-geo-alt-fill",
@@ -58,14 +68,14 @@ const data_ita = {
             <>
               Tesi in azienda presso synArea Consultants Srl.
               <br />
-              Sviluppo di due applicazioni WebGL con grafica 3D real-time, in
+              Il lavoro consisteva nello sviluppo di due applicazioni <Sb text="WebGL"/> con grafica 3D real-time, in
               particolare due laboratori di robotica virtuali con modalità
               "digital twin" (che permette di sincronizzare i movimenti dei
               robot virtuali con quelli dei robot reali corrispondenti) e
               modalità "asincrona" (che permette di riprodurre movimenti
               preregistrati e di rispondere a quiz).
               <br />
-              Le applicazioni sono state sviluppate utilizzando Unity e C#.
+              Le applicazioni sono state sviluppate utilizzando <Sb text="Unity"/> e <Sb text="C#"/>.
             </>
           ),
           icon: bigIcons.synarea,
@@ -124,31 +134,31 @@ const data_ita = {
             <>
               <ul>
                 <li>
-                  C# - Ho lavorato ad un puzzle game in terza persona (progetto
+                  <b>C#</b> - Ho lavorato ad un puzzle game in terza persona (progetto
                   universitario), un simulatore di attracco sulla ISS (progetto
                   universitario) e due laboratori di robotica virtuali (tesi in
-                  azienda) tutti realizzati utilizzando Unity.
+                  azienda) tutti realizzati utilizzando <Sb text="Unity"/>.
                 </li>
                 <li>
-                  C++ - Ho lavorato ad un videogioco basato su catapulte
-                  (progetto universitario) realizzato utilizzando OpenGL.
+                  <b>C++</b> - Ho lavorato ad un videogioco basato su catapulte
+                  (progetto universitario) realizzato utilizzando <Sb text="OpenGL"/>.
                 </li>
                 <li>
-                  Javascript - Ho lavorato a diverse applicazioni web per
+                  <b>Javascript</b> - Ho lavorato a diverse applicazioni web per
                   progetti universitari e personali, alcune di queste realizzate
-                  utilizzando React e Node.js. Per i database ho utilizzato
-                  sqlite e MongoDB.
+                  utilizzando <Sb text="React"/> e <Sb text="Node.js"/>. Per i database ho
+                  utilizzato <Sb text="sqlite"/> e <Sb text="MongoDB"/>.
                 </li>
                 <li>
-                  Kotlin - Ho lavorato ad un applicazione Android per la
+                  <b>Kotlin</b> - Ho lavorato ad un applicazione Android per la
                   gestione di piante annaffiate mediante un vaso smart (progetto
                   universitario).
                 </li>
               </ul>
-              Utilizzo/ho utilizzato anche Python, C e Java (per piccoli
+              Utilizzo/ho utilizzato anche <Sb text="Python"/>, <Sb text="C"/> e <Sb text="Java"/> (per piccoli
               progetti personali o universitari).
               <br />
-              Utilizzo Git e GitHub per la gestione dei progetti.
+              Utilizzo <Sb text="Git"/> e <Sb text="GitHub"/> per la gestione dei progetti.
             </>
           ),
           icon: bigIcons.code,
@@ -159,34 +169,37 @@ const data_ita = {
             <>
               <ul>
                 <li>
-                  Unity - Ho lavorato ad alcune applicazioni (accennate prima)
+                  <b>Unity</b> - Ho lavorato ad alcune applicazioni (accennate prima)
                   per progetti universitari e per la tesi, in particolare mi
                   sono occupato di: programmazione, gestione di asset 3D,
                   animazione, level design, interfacce.
                 </li>
                 <li>
-                  Blender - Ho lavorato ad alcuni progetti universitari che
+                  <b>Blender</b> - Ho lavorato ad alcuni progetti universitari che
                   richiedevano render statici, video animati e set extension
                   (aggiunta di elementi in CG su riprese live action), in
                   particolare mi sono occupato di modellazione, animazione,
                   gestione di materiali e texture, simulazioni, lighting,
                   rendering e compositing.
                 </li>
-                <li>Pacchetto Adobe - PS, AI, PP, AE, XD</li>
                 <li>
-                  DaVinci Resolve - Ho lavorato a diversi video per progetti
+                  <b>Pacchetto Adobe</b> - Ho utilizzato <Sb text="Premiere Pro"/> per montare
+                  diversi video per progetti universitari e per il tirocinio
+                  presso Bitpop Transmedia, ed <Sb text="After Effects"/> per le parti in
+                  motion graphics. Utilizzo <Sb text="Photoshop"/> ed <Sb text="Illustrator"/> per la
+                  gestione di asset grafici di vari tipi di progetti.
+                </li>
+                <li>
+                  <b>DaVinci Resolve</b> - Ho lavorato a diversi video per progetti
                   universitari e personali, in particolare mi sono occupato di
                   montaggio, color grading e compositing.
                 </li>
                 <li>
-                  Figma - Ho lavorato ad alcuni mockup di applicazioni web e
+                  <b>Figma</b> - Ho lavorato ad alcuni mockup di applicazioni web e
                   mobile per progetti universitari. Utilizzo Figma anche per la
                   gestione di asset grafici di vari tipi di progetti.
                 </li>
               </ul>
-              Utilizzo spesso Unity e Blender per sviluppare applicazioni o
-              produrre video in computer grafica animata. Conosco le basi di
-              Adobe Premiere Pro, Adobe After Effects e DaVinci Resolve.
             </>
           ),
           icon: bigIcons.apps,
@@ -195,17 +208,17 @@ const data_ita = {
           title: "Altro",
           body: () => (
             <>
-              Il mio sistema operativo di riferimento è Windows, mi capita di
-              utilizare anche Ubuntu ed Ubuntu server (che utilizzo per un NAS
+              Il mio sistema operativo di riferimento è <Sb text="Windows"/>, mi capita di
+              utilizare anche <Sb text="Ubuntu"/> ed <Sb text="Ubuntu server"/> (che utilizzo per un NAS
               "homemade").
               <br />
-              Di tanto in tanto utilizzo il pacchetto Office e le applicazioni
+              Di tanto in tanto utilizzo il pacchetto <Sb text="Office"/> e le applicazioni
               equivalenti di Google.
               <br />
-              Per scrivere la tesi sto utilizzando LaTeX.
+              Per scrivere la tesi sto utilizzando <Sb text="LaTeX"/>.
             </>
           ),
-          icon: bigIcons.db,
+          icon: bigIcons.misc,
         },
       ],
     },
@@ -227,7 +240,9 @@ const data_ita = {
         {
           body: () => (
             <>
-              Design, UX, multidiciplinare, ...
+              Mi piace progettare e realizzare applicazioni ed altro pensando al prodotto nel
+              suo complesso e ponendo al centro l'utente finale, questo mi porta a sviluppare
+              competenze in diversi ambiti mantenendo un profilo multidisciplinare.
               <br />
               Mi piace lavorare in team e sono una persona piuttosto calma, cosa
               che mi aiuta a gestire il lavoro sotto pressione quando
