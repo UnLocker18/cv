@@ -9,7 +9,9 @@ const Item = (props) => (
     <img
       class={
         "small-img " +
-        (props.icon.includes(".svg") || props.icon.includes(".png") ? "img-color-primary px-1" : "")
+        (props.icon.includes(".svg") || props.icon.includes(".png")
+          ? "img-color-primary px-1"
+          : "")
       }
       src={props.icon}
     />
@@ -83,10 +85,16 @@ const Title = () => {
     <div class="d-flex justify-content-between align-items-center">
       <h1>{data.title}</h1>
       <div class="d-flex h-50">
+        <a
+          class="me-4 hover-primary"
+          href={`./pdf/cv_gianluca_garganese_${data.language}.pdf`}
+        >
+          <i class="bi bi-download mx-2"></i>
+        </a>
         <span
           class={
             "custom-btn-radio me-3 " +
-            (data.language === "ita" ? "checked" : "")
+            (data.language === "ita" ? "checked" : "hover-primary")
           }
           onClick={changeLanguage}
         >
@@ -95,7 +103,8 @@ const Title = () => {
         <span class="divider me-3" />
         <span
           class={
-            "custom-btn-radio " + (data.language === "eng" ? "checked" : "")
+            "custom-btn-radio " +
+            (data.language === "eng" ? "checked" : "hover-primary")
           }
           onClick={changeLanguage}
         >
@@ -116,7 +125,11 @@ const Head = () => (
         width="150px"
         height="196px"
       />
-      <div class={"d-flex flex-column my-auto mt-md-0 ms-3 " + (page == 0 ? "mt-3" : "")}>
+      <div
+        class={
+          "d-flex flex-column my-auto mt-md-0 ms-3 " + (page == 0 ? "mt-3" : "")
+        }
+      >
         {data.head.items.map((i) => (
           <span class="d-flex mt-1">
             <i class={"head-icon me-2 bi " + i.icon}></i>

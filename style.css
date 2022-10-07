@@ -12,6 +12,9 @@
 .color-primary {
     color: var(--primary);
 }
+.hover-primary:hover {
+    color: var(--primary);
+}
 
 .color-light {
     color: var(--light);
