@@ -1,6 +1,7 @@
 :root {
     --primary: #067B85;
-    --light: #6c757d;
+    --light: #ced4da;
+    --info: #6c757d;
     --dark: #343a40;
 }
 
@@ -33,7 +34,7 @@ h4 {
 h5 {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--light);
+    color: var(--info);
 }
 
 h6 {
@@ -57,4 +58,18 @@ a, a:hover {
 }
 .head-icon {
     color: var(--primary);
+}
+.custom-btn-radio {
+    cursor: pointer;
+    color: var(--dark);
+    font-weight: 300;
+}
+.custom-btn-radio.checked {
+    color: var(--primary);
+    font-weight: 500;
+}
+.divider {
+    background-color: var(--light);
+    width: 1px;
+    display: inline-block;
 }
