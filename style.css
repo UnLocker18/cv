@@ -12,6 +12,9 @@
 .color-primary {
     color: var(--primary);
 }
+.hover-primary:hover {
+    color: var(--primary);
+}
 
 .color-light {
     color: var(--light);
@@ -79,6 +82,10 @@ ul li::before {
     display: inline-block;
     width: 1em;
     margin-left: -1em;
+}
+
+table {
+    font-size: 0.6rem;
 }
 
 
