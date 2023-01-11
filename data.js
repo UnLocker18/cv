@@ -4,6 +4,8 @@
 const Sb = (props) => (<span class="semi-bold" >{props.text}</span>);
 
 const bigIcons = {
+  alten:
+    "https://media.licdn.com/dms/image/C4E0BAQGYuFjszS02gA/company-logo_100_100/0/1641206587487?e=1681344000&v=beta&t=kUb4tNfVT4Jk8hrwNtm9LG-vtK-35hN9mjvXbQgMC5g",
   synarea:
     "https://media-exp1.licdn.com/dms/image/C4E0BAQFyqUegPGsI8g/company-logo_200_200/0/1519889453023?e=2147483647&v=beta&t=0EdGjRqiyd4dI8rwr_6T6wTsXROgs_9eypLV9VSHvHo",
   bitpop:
@@ -29,7 +31,7 @@ const data_ita = {
   language: "ita",
   title: "Gianluca Garganese",
   head: {
-    line: "Laureando della magistrale in Ingegneria del Cinema e dei Mezzi di Comunicazione presso Politecnico di Torino.",
+    line: "Neo laureato magistrale in Ingegneria del Cinema e dei Mezzi di Comunicazione presso Politecnico di Torino.\nDal 2023 Simulation Software Engineer presso Alten.",
     items: [
       {
         text: "07/11/1997 NAPOLI (NA) ITALIA",
@@ -40,7 +42,7 @@ const data_ita = {
         icon: "bi-globe2",
       },
       {
-        text: "Via Aldo Brina 19 13878 - CANDELO (BI) ITALIA",
+        text: "Via del Nocciolino 9 21018 - Sesto Calende (VA) ITALIA",
         icon: "bi-geo-alt-fill",
       },
       { text: "3293906972", icon: "bi-phone-fill" },
@@ -49,16 +51,26 @@ const data_ita = {
         text: "https://www.linkedin.com/in/gianluca-garganese/",
         icon: "bi-linkedin",
       },
-      {
+      /* {
         text: "In arrivo il sito web con il portfolio!",
         icon: "bi-file-ppt-fill",
-      },
+      }, */
     ],
   },
   sections: [
     {
       title: "Esperienza",
       items: [
+        {
+          title: "Simulation Software Engineer",
+          subtitle: "Alten",
+          info1: "gen 2023 - Presente",
+          info2: "Gallarate, Lombardia, Italia",
+          body: () => (
+            <></>
+          ),
+          icon: bigIcons.alten,
+        },
         {
           title: "Tesista",
           subtitle: "synArea Consultants Srl",
@@ -104,8 +116,8 @@ const data_ita = {
           title: "Politecnico di Torino",
           subtitle:
             "Laurea Magistrale - Ingegneria del Cinema e dei Mezzi di Comunicazione",
-          info1: "Media esami 28.3",
-          info2: "2020 - 2022",
+          info1: "Voto 110/110",
+          info2: "ott 2020 - dic 2022",
           icon: bigIcons.polito,
         },
         {
@@ -113,7 +125,7 @@ const data_ita = {
           subtitle:
             "Laurea Triennale - Ingegneria del Cinema e dei Mezzi di Comunicazione",
           info1: "Voto 93/110",
-          info2: "2016 - 2020",
+          info2: "ott 2016 - lug 2020",
           icon: bigIcons.polito,
         },
         {
@@ -215,7 +227,7 @@ const data_ita = {
               Di tanto in tanto utilizzo il pacchetto <Sb text="Office"/> e le applicazioni
               equivalenti di Google.
               <br />
-              Per scrivere la tesi sto utilizzando <Sb text="LaTeX"/>.
+              Per scrivere la tesi ho utilizzato <Sb text="LaTeX"/>.
             </>
           ),
           icon: bigIcons.misc,
@@ -381,7 +393,7 @@ const data_eng = {
     nationality: "Nationality: Italian",
     items: [
       {
-        text: "Via Aldo Brina 19 13878 - CANDELO (BI) ITALY",
+        text: "Via del Nocciolino 9 21018 - Sesto Calende (VA) ITALY",
         icon: "bi-geo-alt-fill",
       },
       {
@@ -396,10 +408,10 @@ const data_eng = {
         text: "https://www.linkedin.com/in/gianluca-garganese/",
         icon: "bi-linkedin",
       },
-      {
+      /* {
         text: "Portfolio website coming soon!",
         icon: "bi-file-ppt-fill",
-      },
+      }, */
     ],
   },
   sections: [
@@ -407,10 +419,20 @@ const data_eng = {
       title: "Experience",
       items: [
         {
+          title: "Simulation Software Engineer",
+          subtitle: "Alten",
+          info1: "Jan 2023 - Present",
+          info2: "Gallarate, Lombardia, Italy",
+          body: () => (
+            <></>
+          ),
+          icon: bigIcons.alten,
+        },
+        {
           title: "Thesis Student",
           subtitle: "synArea Consultants Srl",
-          info1: "mar 2022 - giu 2022",
-          info2: "Torino, Piemonte, Italia",
+          info1: "Mar 2022 - Jun 2022",
+          info2: "Turin, Piedmont, Italy",
           body: () => (
             <>
               Thesis + internship at synArea Consultants Srl.
@@ -450,15 +472,15 @@ const data_eng = {
         {
           title: "Politecnico di Torino",
           subtitle: "Master's Degree in Cinema And Media Engineering",
-          info1: "Average mark 28.3",
-          info2: "2020 - 2022",
+          info1: "Final grade 110/110",
+          info2: "Oct 2020 - Dec 2022",
           icon: bigIcons.polito,
         },
         {
           title: "Politecnico di Torino",
           subtitle: "Bachelor's Degree in Cinema And Media Engineering",
           info1: "Final grade 93/110",
-          info2: "2016 - 2020",
+          info2: "Oct 2016 - Jul 2020",
           icon: bigIcons.polito,
         },
         {
