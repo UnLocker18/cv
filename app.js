@@ -163,8 +163,8 @@ const App = () => {
         let skipItems = 0;
         if (page == 2 && sectionIndex == 0) skipItems = 100;
         if (page == 2 && sectionIndex == 1) skipItems = 1;
-        if (page == 3 && sectionIndex < 3) skipItems = 100;
-        if (page == 3 && sectionIndex == 3) skipItems = 1;
+        if (page == 3 && sectionIndex < 2) skipItems = 100;
+        if (page == 3 && sectionIndex == 2) skipItems = 1;
         if (skipItems < s.items.length)
           return (
             <Section
@@ -196,7 +196,7 @@ const App = () => {
 
 document.getElementById("root").appendChild(<App />);
 
-document.addEventListener("keydown", function (event) {
+/* document.addEventListener("keydown", function (event) {
   const resetApp = () => {
     document.getElementById("root").innerHTML = "";
     document.getElementById("root").appendChild(<App />);
@@ -218,4 +218,4 @@ document.addEventListener("keydown", function (event) {
       resetApp();
       break;
   }  
-});
+}); */
