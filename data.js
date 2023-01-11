@@ -54,10 +54,10 @@ const data_ita = {
         text: "https://www.linkedin.com/in/gianluca-garganese/",
         icon: "bi-linkedin",
       },
-      /* {
+      {
         text: "In arrivo il sito web con il portfolio!",
         icon: "bi-file-ppt-fill",
-      }, */
+      },
     ],
   },
   sections: [
@@ -403,9 +403,17 @@ const data_eng = {
   head: {
     line: () => <>
       Cinema and Media Engineering master graduate at Politecnico di Torino.<br />
-      Simulation Software Engineer at Alten."
+      Simulation Software Engineer at Alten.
     </>,
     items: [
+      {
+        text: "07/11/1997 NAPLES (NA) ITALY",
+        icon: "bi-calendar2-date-fill",
+      },
+      {
+        text: "Nazionality: Italian",
+        icon: "bi-globe2",
+      },
       {
         text: "Via del Nocciolino 9 21018 - Sesto Calende (VA) ITALY",
         icon: "bi-geo-alt-fill",
@@ -422,10 +430,10 @@ const data_eng = {
         text: "https://www.linkedin.com/in/gianluca-garganese/",
         icon: "bi-linkedin",
       },
-      /* {
+      {
         text: "Portfolio website coming soon!",
         icon: "bi-file-ppt-fill",
-      }, */
+      },
     ],
   },
   sections: [
