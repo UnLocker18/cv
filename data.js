@@ -31,7 +31,10 @@ const data_ita = {
   language: "ita",
   title: "Gianluca Garganese",
   head: {
-    line: "Neo laureato magistrale in Ingegneria del Cinema e dei Mezzi di Comunicazione presso Politecnico di Torino.\nDal 2023 Simulation Software Engineer presso Alten.",
+    line: () => <>
+      Neo laureato magistrale in Ingegneria del Cinema e dei Mezzi di Comunicazione presso Politecnico di Torino.<br />
+      Simulation Software Engineer presso Alten.
+    </>,
     items: [
       {
         text: "07/11/1997 NAPOLI (NA) ITALIA",
@@ -398,7 +401,10 @@ const data_eng = {
   language: "eng",
   title: "Gianluca Garganese",
   head: {
-    line: "Cinema and Media Engineering master graduand at Politecnico di Torino",
+    line: () => <>
+      Cinema and Media Engineering master graduate at Politecnico di Torino.<br />
+      Simulation Software Engineer at Alten."
+    </>,
     items: [
       {
         text: "Via del Nocciolino 9 21018 - Sesto Calende (VA) ITALY",
