@@ -159,11 +159,12 @@ const App = () => {
       ) : (
         ""
       )}
-      {data.sections.map((s, sIndex) => {
+      {data.sections.map((s, sectionIndex) => {
         let skipItems = 0;
-        if (page == 2 && sIndex == 0) skipItems = 100;
-        if (page == 2 && sIndex == 1) skipItems = 1;
-        if (page == 3 && sIndex < 3) skipItems = 100;
+        if (page == 2 && sectionIndex == 0) skipItems = 100;
+        if (page == 2 && sectionIndex == 1) skipItems = 1;
+        if (page == 3 && sectionIndex < 3) skipItems = 100;
+        if (page == 3 && sectionIndex == 3) skipItems = 1;
         if (skipItems < s.items.length)
           return (
             <Section
@@ -173,7 +174,7 @@ const App = () => {
                   index < skipItems ? "" : <Item {...i} />
                 ),
                 hideHead: skipItems > 0,
-                hideHr: page == 3 && sIndex == 3,
+                hideHr: page == 3 && sectionIndex == 3,
               }}
             />
           );
