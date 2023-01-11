@@ -144,7 +144,7 @@ const Head = () => (
         ))}
       </div>
     </div>
-    <h4 class="head-line">{data.head.line}</h4>
+    <h4 class="head-line">{data.head.line instanceof Function ? data.head.line() : data.head.line}</h4>
   </>
 );
 
@@ -195,7 +195,7 @@ const App = () => {
 
 document.getElementById("root").appendChild(<App />);
 
-/* document.addEventListener("keydown", function (event) {
+document.addEventListener("keydown", function (event) {
   const resetApp = () => {
     document.getElementById("root").innerHTML = "";
     document.getElementById("root").appendChild(<App />);
@@ -217,4 +217,4 @@ document.getElementById("root").appendChild(<App />);
       resetApp();
       break;
   }  
-}); */
+});
